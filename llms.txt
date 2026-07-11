@@ -1,0 +1,51 @@
+# Aivel
+
+> Бухгалтерская и технологическая компания: ведёт учёт, помогает вовремя замечать важные изменения и показывает проверяемое основание до решения.
+
+Основные возможности:
+- бухгалтерское и налоговое сопровождение;
+- важные изменения с периодом, свежестью, источником и границей;
+- проверяемые ответы на вопросы о бизнесе;
+- автоматизация первичных документов, банковских операций, обращений и сверок.
+
+Канонические страницы:
+- Увидеть важное — изменения, сигналы и вопросы: https://adavydov.github.io/vazhnoe/
+- Учёт как база — бухгалтерский, налоговый, кадровый и управленческий учёт, зарплата и 1С: https://adavydov.github.io/buhgalterskoe-soprovozhdenie/
+- Как работает продукт: https://adavydov.github.io/kak-rabotaet/
+- Автоматизация учёта: https://adavydov.github.io/avtomatizatsiya-ucheta/
+- Первичные документы: https://adavydov.github.io/avtomatizatsiya-ucheta/pervichnye-dokumenty/
+- Банковские операции: https://adavydov.github.io/avtomatizatsiya-ucheta/bankovskie-operatsii/
+- Запросы подразделений и клиентов: https://adavydov.github.io/avtomatizatsiya-ucheta/kommunikatsii-s-klientami/
+- Сверки с контрагентами: https://adavydov.github.io/avtomatizatsiya-ucheta/sverki-s-kontragentami/
+- Контроль качества: https://adavydov.github.io/avtomatizatsiya-ucheta/kontrol-kachestva/
+- Результаты внедрений: https://adavydov.github.io/rezultaty/
+- Партнёрам — бухгалтерским компаниям: https://adavydov.github.io/buhgalterskim-kompaniyam/
+- Крупным компаниям: https://adavydov.github.io/krupnym-kompaniyam/
+- О компании: https://adavydov.github.io/o-kompanii/
+- Открытый реестр для ИИ-систем: https://adavydov.github.io/dlya-ii-agentov/
+- Данные и источники: https://adavydov.github.io/dannye-i-istochniki/
+- Ограничения: https://adavydov.github.io/ogranicheniya/
+
+Примеры поисковых страниц с проверяемыми ответами:
+- https://adavydov.github.io/voprosy/pochemu-pribyl-est-a-deneg-net/
+- https://adavydov.github.io/voprosy/hvatit-li-deneg-na-nalogi-i-zarplatu/
+- https://adavydov.github.io/voprosy/gde-vyrosli-rashody/
+
+Совокупные показатели реализованных внедрений:
+- 80–90%: рутины в отдельных ключевых процессах выполнялось без участия человека. Диапазон из реализованных внедрений Aivel; состав процессов и выборки различался.
+- до 30%: ресурса бухгалтерской функции высвобождалось в отдельных проектах. Показатель относился к подразделениям от 50 сотрудников и зависит от объёма типовых операций.
+- 6–8 месяцев: срок окупаемости реализованных проектов. Срок оценивается после фиксации исходных затрат и фактического эффекта.
+
+Названные клиенты: DDX, Нефтьмагистраль, Братья Караваевы, Гольфстрим, ВсеИнструменты.ру.
+Показатели не приписываются отдельным названным клиентам.
+
+Ограничения:
+- Aivel не гарантирует обнаружение любого события.
+- Реальный сигнал или ответ зависит от подключённых источников, их свежести, состояния учёта и согласованных правил важности.
+- Налоговое, юридическое и управленческое суждение остаётся у ответственного человека.
+- Публичные примеры используют обезличенные учебные данные.
+
+Официальная почта: info@aivel.ru
+Карта сайта: https://adavydov.github.io/sitemap.xml
+Правила обхода: https://adavydov.github.io/robots.txt
+Сведения проверены 11 июля 2026 года.
