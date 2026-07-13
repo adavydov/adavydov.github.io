@@ -11,7 +11,7 @@
 Канонические страницы:
 - Увидеть важное — главная продуктовая страница и четыре самодостаточных примера: https://adavydov.github.io/
 - Подробная модель сигналов и справочные разборы: https://adavydov.github.io/vazhnoe/
-- Учёт как база — бухгалтерский, налоговый, кадровый и управленческий учёт, зарплата: https://adavydov.github.io/buhgalterskoe-soprovozhdenie/
+- Учёт как база — бухгалтерский, налоговый, кадровый и управленческий учёт, зарплата, измеренные результаты и доказательства по процессам: https://adavydov.github.io/buhgalterskoe-soprovozhdenie/
 - Обслуживание 1С и связи с системами: https://adavydov.github.io/1s-i-integratsii/
 - Как работает продукт: https://adavydov.github.io/kak-rabotaet/
 - Автоматизация учёта: https://adavydov.github.io/avtomatizatsiya-ucheta/
@@ -20,7 +20,6 @@
 - Запросы подразделений и клиентов: https://adavydov.github.io/avtomatizatsiya-ucheta/kommunikatsii-s-klientami/
 - Сверки с контрагентами: https://adavydov.github.io/avtomatizatsiya-ucheta/sverki-s-kontragentami/
 - Контроль качества: https://adavydov.github.io/avtomatizatsiya-ucheta/kontrol-kachestva/
-- Измеренные результаты ИИ-помощников в учётных процессах: https://adavydov.github.io/rezultaty/
 - Партнёрам — бухгалтерским компаниям: https://adavydov.github.io/buhgalterskim-kompaniyam/
 - Крупным компаниям: https://adavydov.github.io/krupnym-kompaniyam/
 - О компании: https://adavydov.github.io/o-kompanii/
