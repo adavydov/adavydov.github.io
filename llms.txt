@@ -6,21 +6,23 @@
 - бухгалтерское и налоговое сопровождение;
 - важные изменения с периодом, свежестью, источником и границей;
 - короткие проверяемые сигналы в Telegram или по почте без необходимости заранее формулировать вопрос;
-- автоматизация первичных документов, банковских операций, обращений и сверок.
+- автоматизация первичных документов, банковских операций, сверок, закрытия периода, расчёта зарплаты, кадрового учёта и обращений.
 
 Канонические страницы:
 - Увидеть важное — главная продуктовая страница и четыре самодостаточных примера: https://adavydov.github.io/
 - Подробная модель сигналов и справочные разборы: https://adavydov.github.io/vazhnoe/
-- Учёт как база — бухгалтерский, налоговый, кадровый и управленческий учёт, зарплата, измеренные результаты и доказательства по процессам: https://adavydov.github.io/buhgalterskoe-soprovozhdenie/
-- Обслуживание 1С и связи с системами: https://adavydov.github.io/1s-i-integratsii/
-- Как работает продукт: https://adavydov.github.io/kak-rabotaet/
+- Наладить учёт — бухгалтерский, налоговый, кадровый и управленческий учёт, ИИ-помощники с измеренными результатами и экспресс-аудит: https://adavydov.github.io/buhgalterskoe-soprovozhdenie/
+- Обслуживание 1С — лицензии, облако или контур компании, техническая поддержка, доработки и связи с ИИ-помощниками: https://adavydov.github.io/1s-i-integratsii/
+- Понять, как это работает — механика продукта, контроль и аудиторский след: https://adavydov.github.io/kak-rabotaet/
 - Автоматизация учёта: https://adavydov.github.io/avtomatizatsiya-ucheta/
 - Первичные документы: https://adavydov.github.io/avtomatizatsiya-ucheta/pervichnye-dokumenty/
 - Банковские операции: https://adavydov.github.io/avtomatizatsiya-ucheta/bankovskie-operatsii/
 - Запросы подразделений и клиентов: https://adavydov.github.io/avtomatizatsiya-ucheta/kommunikatsii-s-klientami/
 - Сверки с контрагентами: https://adavydov.github.io/avtomatizatsiya-ucheta/sverki-s-kontragentami/
+- Закрытие периода: https://adavydov.github.io/avtomatizatsiya-ucheta/zakrytie-perioda/
+- Расчёт зарплаты и кадровый учёт: https://adavydov.github.io/avtomatizatsiya-ucheta/zarplata-i-kadry/
 - Контроль качества: https://adavydov.github.io/avtomatizatsiya-ucheta/kontrol-kachestva/
-- Партнёрам — бухгалтерским компаниям: https://adavydov.github.io/buhgalterskim-kompaniyam/
+- Стать партнёром — собственникам бухгалтерских компаний: https://adavydov.github.io/buhgalterskim-kompaniyam/
 - Крупным компаниям: https://adavydov.github.io/krupnym-kompaniyam/
 - О компании: https://adavydov.github.io/o-kompanii/
 - Открытый реестр для ИИ-систем: https://adavydov.github.io/dlya-ii-agentov/
@@ -49,4 +51,4 @@
 Официальная почта: info@aivel.ru
 Карта сайта: https://adavydov.github.io/sitemap.xml
 Правила обхода: https://adavydov.github.io/robots.txt
-Сведения проверены 11 июля 2026 года.
+Сведения проверены 13 июля 2026 года.
