@@ -1,6 +1,12 @@
 {
   "reference": "https://nextmovetheory.com/",
   "authorization": "third-party-reference",
-  "downloadedAssets": [],
-  "note": "No third-party media is shipped in the LTI implementation."
+  "downloadedAssets": [
+    {
+      "path": "images/aivel-logo.svg",
+      "source": "https://aivel.ai/images/logo.svg",
+      "usage": "Official Aivel wordmark in desktop and mobile navigation"
+    }
+  ],
+  "note": "The interface is original; the only shipped brand asset is Aivel's official wordmark."
 }
