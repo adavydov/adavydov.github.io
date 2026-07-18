@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f0f9ff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4ed8'/%3E%3Cpath d='M19 19h26v7H34v6h9v7h-9v12h-8V26h-7z' fill='white'/%3E%3C/svg%3E">
+  <meta name="description" content="Проверенный каталог временных вакансий бариста и продавца-консультанта в Москве для соискательницы 16 лет — с расстоянием, зарплатой, правовыми ограничениями и отзывами.">
+  <meta property="og:title" content="Летняя подработка в Москве — 16+">
+  <meta property="og:description" content="22 актуальные вакансии рядом с Мосфильмовской: сортировка, звонок, отклик, избранное и проверка условий для несовершеннолетней.">
+  <title>Летняя подработка в Москве — 16+</title>
+  <style>
+    :root {
+      --color-primary: #1d4ed8;
+      --color-primary-strong: #173ea6;
+      --color-on-primary: #fff;
+      --color-secondary: #047857;
+      --color-background: #f0f9ff;
+      --color-surface: #fff;
+      --color-foreground: #0f172a;
+      --color-muted: #eaf3fb;
+      --color-muted-text: #475569;
+      --color-border: #cbdceb;
+      --color-warning: #92400e;
+      --color-warning-bg: #fff7d6;
+      --color-danger: #b42318;
+      --color-danger-bg: #fff0ed;
+      --color-success: #05603a;
+      --color-success-bg: #e8f7ef;
+      --color-ring: #1d4ed8;
+      --radius: 18px;
+      --content: 1160px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--color-foreground);
+      background: var(--color-background);
+      font-synthesis: none;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; min-width: 320px; background: var(--color-background); line-height: 1.55; }
+    body::before { content: ""; display: block; height: 8px; background: linear-gradient(90deg, var(--color-primary), #0284c7 52%, var(--color-secondary)); }
+    a { color: var(--color-primary-strong); text-underline-offset: 3px; }
+    button, select, input { font: inherit; }
+    button, .button { touch-action: manipulation; }
+    button { cursor: pointer; }
+    :focus-visible { outline: 3px solid var(--color-ring); outline-offset: 3px; }
+    .skip-link { position: absolute; left: 16px; top: -80px; z-index: 1000; padding: 12px 16px; color: #fff; background: #0f172a; border-radius: 10px; }
+    .skip-link:focus { top: 16px; }
+    .wrap { width: min(calc(100% - 32px), var(--content)); margin-inline: auto; }
+
+    header { padding: 48px 0 28px; }
+    .eyebrow { margin: 0 0 12px; color: var(--color-primary-strong); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1, h2, h3 { margin-top: 0; line-height: 1.12; }
+    h1 { max-width: 780px; margin-bottom: 18px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.45rem, 7vw, 5.9rem); font-weight: 600; letter-spacing: -.045em; }
+    h2 { margin-bottom: 12px; font-size: clamp(1.6rem, 4vw, 2.45rem); letter-spacing: -.025em; }
+    h3 { margin-bottom: 8px; font-size: 1.18rem; }
+    .lede { max-width: 760px; margin: 0; color: #334155; font-size: clamp(1.05rem, 2vw, 1.28rem); }
+    .updated { display: inline-flex; margin-top: 22px; padding: 8px 12px; border: 1px solid var(--color-border); border-radius: 999px; color: #334155; background: rgba(255,255,255,.75); font-size: .88rem; font-weight: 700; }
+
+    .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 28px 0 0; }
+    .stat { min-height: 112px; padding: 18px; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); }
+    .stat strong { display: block; margin-bottom: 5px; font-size: 2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+    .stat span { color: var(--color-muted-text); font-size: .9rem; }
+
+    main section { margin-block: 28px; }
+    .panel { padding: 24px; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); }
+    .truth { border-left: 8px solid var(--color-warning); background: var(--color-warning-bg); }
+    .truth strong { color: #78350f; }
+    .small { color: var(--color-muted-text); font-size: .9rem; }
+    .source-note { margin: 10px 0 0; color: var(--color-muted-text); font-size: .83rem; }
+
+    .city-route { display: grid; gap: 22px; padding: 26px; color: #fff; background: #0f3d64; border: 0; }
+    .city-route .eyebrow { color: #bae6fd; }
+    .city-route p { max-width: 760px; margin: 0; color: #e0f2fe; }
+    .route-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .route-meta span { padding: 7px 10px; border: 1px solid rgba(255,255,255,.32); border-radius: 999px; font-size: .82rem; font-weight: 700; }
+    .route-actions, .card-actions { display: grid; grid-template-columns: 1fr; gap: 10px; }
+    .button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 8px; padding: 12px 16px; border: 2px solid transparent; border-radius: 12px; font-weight: 800; line-height: 1.1; text-align: center; text-decoration: none; transition: background-color .18s ease, border-color .18s ease, color .18s ease, opacity .18s ease; }
+    .button:active, button:active { opacity: .76; }
+    .button-primary { color: var(--color-on-primary); background: var(--color-primary); }
+    .button-primary:hover { background: var(--color-primary-strong); }
+    .button-call { color: #083b2c; background: #bff4d8; border-color: #81d7aa; }
+    .button-call:hover { background: #a9edc8; }
+    .button-light { color: #0f3d64; background: #fff; }
+    .button-quiet { color: var(--color-foreground); background: var(--color-muted); border-color: var(--color-border); }
+
+    .filters { position: sticky; top: 8px; z-index: 20; padding: 14px; border: 1px solid var(--color-border); border-radius: var(--radius); background: rgba(255,255,255,.96); box-shadow: 0 8px 30px rgba(15,23,42,.08); backdrop-filter: blur(12px); }
+    .filter-grid { display: grid; gap: 12px; }
+    label { display: grid; gap: 5px; color: #334155; font-size: .78rem; font-weight: 800; }
+    select { width: 100%; min-height: 46px; padding: 9px 38px 9px 12px; border: 1px solid #9fb6c9; border-radius: 10px; color: var(--color-foreground); background: #fff; }
+    .results-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 2px 12px; }
+    #result-count { font-weight: 800; font-variant-numeric: tabular-nums; }
+    .text-button { min-height: 44px; padding: 8px 12px; border: 0; border-radius: 10px; color: var(--color-primary-strong); background: transparent; font-weight: 800; }
+    .text-button:hover { background: var(--color-muted); }
+
+    .job-list { display: grid; gap: 14px; }
+    .job-card { position: relative; display: grid; gap: 16px; padding: 20px; border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); }
+    .job-card.is-favorite { border: 2px solid #d97706; }
+    .job-card.is-discarded { opacity: .72; background: #f8fafc; }
+    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+    .card-top h3 { margin-bottom: 4px; }
+    .company { margin: 0; color: var(--color-muted-text); font-weight: 650; }
+    .star-button { flex: 0 0 auto; min-width: 48px; min-height: 48px; padding: 0; border: 1px solid #d8b46a; border-radius: 12px; color: #9a5c00; background: #fff8df; font-size: 1.6rem; line-height: 1; }
+    .star-button[aria-pressed="true"] { color: #fff; background: #b86700; border-color: #9a5c00; }
+    .badges { display: flex; flex-wrap: wrap; gap: 7px; }
+    .badge { display: inline-flex; align-items: center; min-height: 28px; padding: 5px 9px; border: 1px solid transparent; border-radius: 999px; font-size: .75rem; font-weight: 850; line-height: 1.15; }
+    .badge-temp { color: #075985; background: #e0f2fe; border-color: #7dd3fc; }
+    .badge-possible { color: var(--color-success); background: var(--color-success-bg); border-color: #86d6ac; }
+    .badge-precedent { color: var(--color-warning); background: var(--color-warning-bg); border-color: #eecb68; }
+    .badge-change { color: var(--color-danger); background: var(--color-danger-bg); border-color: #efaaa2; }
+    .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .fact { padding: 11px; border-radius: 12px; background: #f5f9fc; }
+    .fact b { display: block; margin-bottom: 3px; font-size: .72rem; letter-spacing: .04em; text-transform: uppercase; color: #526678; }
+    .fact span { font-weight: 760; font-variant-numeric: tabular-nums; }
+    .eligibility { margin: 0; padding: 13px 14px; border-radius: 12px; color: #3b2f1e; background: #fff9e8; }
+    .review { margin: 0; padding-top: 13px; border-top: 1px solid var(--color-border); color: #334155; font-size: .92rem; }
+    .review a { font-weight: 750; white-space: nowrap; }
+    .card-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .discard-button { color: var(--color-danger); background: #fff; border: 2px solid #efaaa2; }
+    .discard-button[aria-pressed="true"] { color: #fff; background: var(--color-danger); border-color: var(--color-danger); }
+    .phone-hint { grid-column: 1 / -1; margin: -2px 2px 0; color: var(--color-muted-text); font-size: .76rem; }
+
+    .legend { display: grid; gap: 10px; }
+    .legend-row { display: flex; align-items: flex-start; gap: 10px; }
+    .legend-row .badge { flex: 0 0 auto; }
+    .legend-row p { margin: 3px 0 0; color: #334155; font-size: .9rem; }
+    .two-col { display: grid; gap: 16px; }
+    .checklist { margin: 14px 0 0; padding-left: 22px; }
+    .checklist li + li { margin-top: 9px; }
+    .script-box { padding: 16px; border: 1px dashed #8ba7bd; border-radius: 12px; background: #f7fbff; }
+    .script-box p { margin: 0; }
+    .script-box .button { width: 100%; margin-top: 12px; }
+    details { border-top: 1px solid var(--color-border); padding-top: 14px; }
+    summary { min-height: 44px; cursor: pointer; font-weight: 800; }
+    .source-list { padding-left: 20px; }
+    .source-list li + li { margin-top: 8px; }
+    .empty { padding: 34px 22px; border: 1px dashed #8ba7bd; border-radius: var(--radius); background: #fff; text-align: center; }
+
+    .snackbar { position: fixed; left: 16px; right: 16px; bottom: 86px; z-index: 100; display: none; align-items: center; justify-content: space-between; gap: 12px; max-width: 520px; margin-inline: auto; padding: 13px 14px; border-radius: 14px; color: #fff; background: #0f172a; box-shadow: 0 14px 38px rgba(15,23,42,.32); }
+    .snackbar.show { display: flex; }
+    .snackbar button { min-height: 44px; padding: 8px 12px; border: 1px solid #93c5fd; border-radius: 9px; color: #dbeafe; background: transparent; font-weight: 800; }
+    .mobile-nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 8px max(8px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left)); border-top: 1px solid var(--color-border); background: rgba(255,255,255,.97); box-shadow: 0 -8px 24px rgba(15,23,42,.08); }
+    .mobile-nav button { min-height: 50px; padding: 7px 5px; border: 0; border-radius: 10px; color: #334155; background: transparent; font-size: .78rem; font-weight: 850; }
+    .mobile-nav button[aria-pressed="true"] { color: #fff; background: var(--color-primary); }
+    .mobile-nav span { display: block; font-size: .68rem; font-weight: 700; }
+    footer { padding: 34px 0 108px; color: var(--color-muted-text); font-size: .86rem; }
+
+    @media (min-width: 640px) {
+      .stats { grid-template-columns: repeat(4, 1fr); }
+      .route-actions { grid-template-columns: repeat(3, max-content); }
+      .filter-grid { grid-template-columns: repeat(3, 1fr); }
+      .card-actions { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .job-card { padding: 24px; }
+      .two-col { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 920px) {
+      header { padding-top: 72px; }
+      .city-route { grid-template-columns: 1fr auto; align-items: end; }
+      .job-list { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+      .job-card { min-height: 100%; }
+      .mobile-nav { display: none; }
+      .snackbar { bottom: 24px; }
+      footer { padding-bottom: 46px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">К каталогу вакансий</a>
+
+  <header class="wrap">
+    <p class="eyebrow">Москва · временная работа · 16+</p>
+    <h1>Подработка до конца лета</h1>
+    <p class="lede">Бариста или продавец-консультант в одежде. Каталог ранжируется от Мосфильмовской по расстоянию и зарплате, но выше всего ставит законность смены для 16-летней.</p>
+    <span class="updated">Проверено 18 июля 2026 года</span>
+    <div class="stats" aria-label="Сводка каталога">
+      <div class="stat"><strong>22</strong><span>живые вакансии с отметкой «временная работа»</span></div>
+      <div class="stat"><strong>0</strong><span>где одновременно прямо написано 16+, нужная роль и временно</span></div>
+      <div class="stat"><strong>7</strong><span>вариантов, где есть шанс согласовать смену до 7 часов</span></div>
+      <div class="stat"><strong>1,6 км</strong><span>ближайшая вакансия по прямой</span></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel truth" aria-labelledby="strict-title">
+      <h2 id="strict-title">Главный результат проверки</h2>
+      <p><strong>Полностью подтверждённых вакансий пока нет.</strong> У всех 22 живых объявлений HH возраст не указан. Часть вакансий допускает временную работу и короткую смену, но до отклика нужно получить письменное «берём с 16 лет» и дневной график максимум 7 часов.</p>
+      <p class="source-note">Строгий поиск HH по трём условиям — роль + «временная работа» + фильтр для несовершеннолетних — дал 0 результатов. Это не значит, что работодатели откажут; это значит, что согласие нельзя додумывать за них.</p>
+    </section>
+
+    <section class="panel city-route" aria-labelledby="city-title">
+      <div>
+        <p class="eyebrow">Самый надёжный первый звонок</p>
+        <h2 id="city-title">Центр занятости Москвы</h2>
+        <p>Городская программа временного трудоустройства специально работает с подростками 14–18 лет. Попросите подобрать именно бариста или продавца-консультанта рядом с Раменками до 31 августа.</p>
+        <div class="route-meta">
+          <span>Возраст подтверждён: 14–18</span>
+          <span>Формат подтверждён: временно</span>
+          <span>Официальный трудовой договор</span>
+        </div>
+      </div>
+      <div class="route-actions">
+        <a class="button button-call" href="tel:+74957057575">Позвонить сейчас</a>
+        <a class="button button-light" href="mailto:czn-vrem@social.mos.ru?subject=%D0%92%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B4%D0%BB%D1%8F%2016-%D0%BB%D0%B5%D1%82%D0%BD%D0%B5%D0%B9">Написать</a>
+        <a class="button button-light" href="https://czn.mos.ru/ER/Pages/Services/46?_=vremennoe-trudoustrojstvo" target="_blank" rel="noreferrer">Открыть услугу</a>
+        <p class="phone-hint">+7 495 705-75-75, добавочные 34856–34858</p>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="how-title">
+      <h2 id="how-title">Что означают метки</h2>
+      <div class="legend">
+        <div class="legend-row"><span class="badge badge-possible">Можно проверять</span><p>Есть заявленная смена 4–7 часов или гибкий формат. Возраст всё равно нужно подтвердить.</p></div>
+        <div class="legend-row"><span class="badge badge-precedent">Есть прецедент 16+</span><p>Эта сеть раньше публиковала ту же роль с 16 лет, но текущая точка возраст не указала.</p></div>
+        <div class="legend-row"><span class="badge badge-change">Только при изменении смены</span><p>В объявлении стоит 8–12 часов. Для 16-летней такая смена незаконна; отклик имеет смысл только если работодатель письменно согласует ≤7 часов.</p></div>
+      </div>
+    </section>
+
+    <section id="catalog" aria-labelledby="catalog-title">
+      <h2 id="catalog-title">Каталог вакансий</h2>
+      <p class="small">Избранное автоматически поднимается наверх. «Отбросить» скрывает карточку; всё сохраняется только в браузере этого телефона и никуда не отправляется.</p>
+      <div class="filters" aria-label="Фильтры каталога">
+        <div class="filter-grid">
+          <label for="direction">Направление
+            <select id="direction">
+              <option value="all">Оба направления</option>
+              <option value="barista">Бариста</option>
+              <option value="fashion">Одежда</option>
+            </select>
+          </label>
+          <label for="view">Список
+            <select id="view">
+              <option value="active">Не отбракованные</option>
+              <option value="favorites">Только избранное</option>
+              <option value="discarded">Отбракованные</option>
+              <option value="all">Вообще все</option>
+            </select>
+          </label>
+          <label for="sort">Сортировка
+            <select id="sort">
+              <option value="relevance">Сначала подходящие</option>
+              <option value="distance">Сначала ближайшие</option>
+              <option value="salary">Сначала высокая зарплата</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div class="results-meta">
+        <span id="result-count" aria-live="polite"></span>
+        <button class="text-button" id="reset-marks" type="button">Сбросить отметки</button>
+      </div>
+      <div id="job-list" class="job-list"></div>
+    </section>
+
+    <section class="two-col" aria-label="Правила и сценарий звонка">
+      <div class="panel">
+        <h2>Границы закона</h2>
+        <ul class="checklist">
+          <li>С 16 лет трудовой договор обычно подписывает сама работница.</li>
+          <li>До 18 лет: максимум <strong>35 часов в неделю</strong> и <strong>7 часов в день</strong> во время каникул.</li>
+          <li>Нельзя работать ночью, сверхурочно, в выходные и праздники; для несовершеннолетних нет испытательного срока.</li>
+          <li>До трудоустройства обязателен медосмотр за счёт работодателя.</li>
+          <li>Нельзя работать в торговле алкоголем и табаком. Для кофейни важно уточнить, что точка ими не торгует и смена заканчивается до 22:00.</li>
+        </ul>
+        <p class="source-note">Основание: статьи 63, 92, 94, 265, 266 и 268 ТК РФ; памятка Роструда.</p>
+      </div>
+      <div class="panel">
+        <h2>Текст для звонка</h2>
+        <div class="script-box">
+          <p id="call-script">Здравствуйте! Мне 16 лет, я ищу временную работу до 31 августа. Готова работать официально, только в дневные смены до 7 часов и до 35 часов в неделю. Берёте ли вы с 16 лет на эту конкретную точку? Можно ли оформить такой график и срочный договор до конца лета?</p>
+          <button class="button button-quiet" id="copy-script" type="button">Скопировать текст</button>
+        </div>
+        <ul class="checklist">
+          <li>Попросить ответить письменно в чате HH.</li>
+          <li>Уточнить адрес точки, ставку за час и реальную длину смены.</li>
+          <li>Не соглашаться на «стажировку без оформления» или на самозанятость вместо трудового договора.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="reviews-title">
+      <h2 id="reviews-title">Что говорят сотрудники</h2>
+      <p>Отзывы — не гарантия и сильно зависят от конкретной точки. Общая картина: чаще хвалят гибкий график, обучение, коллектив и стабильные выплаты; чаще ругают нехватку людей, работу весь день на ногах, нагрузку вне стойки и пропадающие перерывы.</p>
+      <div class="two-col">
+        <div>
+          <h3>Лучше выглядят по массиву отзывов</h3>
+          <ul class="checklist">
+            <li><strong>«Хлеб с маслом» — 4,4/5, 78% рекомендуют:</strong> сильный коллектив и гибкость; встречаются жалобы на слишком длинные смены.</li>
+            <li><strong>ВкусВилл — 4,1/5, 82% рекомендуют:</strong> обучение, льготы и выбор точки; риск нехватки сменщика и слабых перерывов.</li>
+            <li><strong>BRUSNIKA — 4,1/5, 80% рекомендуют:</strong> коллектив и совмещение с учёбой; отзывы спорят о руководстве, перерывах и фактическом доходе.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Проверять особенно внимательно</h3>
+          <ul class="checklist">
+            <li><strong>Stars Coffee:</strong> хвалят график и обучение, но описывают высокий поток, уборку и нехватку времени на отдых.</li>
+            <li><strong>«Здрасте» — около 3,5/5:</strong> хорошие команды встречаются вместе с жалобами на оплату, нагрузку и руководство.</li>
+            <li><strong>Росинтер — 59,7% рекомендуют:</strong> полезен для старта, но много замечаний к оплате, нагрузке и перерывам.</li>
+          </ul>
+        </div>
+      </div>
+      <p><a href="reviews.txt" download>Скачать короткую сводку отзывов</a> · <a href="jobs.csv" download>Скачать каталог CSV</a></p>
+    </section>
+
+    <section class="panel" aria-labelledby="sources-title">
+      <h2 id="sources-title">Метод и источники</h2>
+      <p>Расстояние — по прямой от нейтральной точки на Мосфильмовской улице, не от домашнего адреса. Это ориентир; реальный маршрут смотрите в картах. Зарплата показана для полного графика из объявления и у несовершеннолетней может быть ниже пропорционально сокращённому времени.</p>
+      <p>Это не буквальная копия всей московской выдачи: HH возвращает более 100 семантически смешанных результатов на каждый широкий запрос, включая копирайтеров, водителей и обычные продуктовые магазины. В каталог вошли 22 живых объявления, которые вручную совпали с профессией, временным форматом и полезным расстоянием; полный «хвост» поиска оставлен по ссылкам ниже.</p>
+      <details>
+        <summary>Открыть список источников и архивных прецедентов 16+</summary>
+        <ul class="source-list">
+          <li><a href="https://czn.mos.ru/ER/Pages/Services/46?_=vremennoe-trudoustrojstvo" target="_blank" rel="noreferrer">ЦЗН Москвы: временное трудоустройство 14–18 лет</a></li>
+          <li><a href="https://czn.mos.ru/EE/News/NewsCard/183?_=Najti-podrabotku-na-leto-i-sostavit-rezyume-centr-Professii-budushhego-priglashaet-molodezh-na-festival-trudoustrojstva" target="_blank" rel="noreferrer">ЦЗН: более 400 летних вакансий для молодёжи</a></li>
+          <li><a href="https://www.consultant.ru/document/cons_doc_LAW_34683/9627c87f117f9ccaaf55a73c9a614626c1e87ce0/" target="_blank" rel="noreferrer">ТК РФ, статья 63: договор с 16 лет</a></li>
+          <li><a href="https://git63.rostrud.gov.ru/news/1568488.html" target="_blank" rel="noreferrer">Памятка Роструда о работе несовершеннолетних</a></li>
+          <li><a href="https://hh.ru/search/vacancy?area=1&amp;accept_temporary=true&amp;text=%D0%B1%D0%B0%D1%80%D0%B8%D1%81%D1%82%D0%B0" target="_blank" rel="noreferrer">Живой полный поиск HH: временная работа бариста в Москве</a></li>
+          <li><a href="https://hh.ru/search/vacancy?area=1&amp;accept_temporary=true&amp;text=%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D0%B5%D1%86-%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D0%BD%D1%82%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0" target="_blank" rel="noreferrer">Живой полный поиск HH: временная продажа одежды в Москве</a></li>
+          <li><a href="https://hh.ru/vacancy/129659480" target="_blank" rel="noreferrer">Архивный прецедент «Хлеб с маслом» с 16 лет</a></li>
+          <li><a href="https://hh.ru/vacancy/128534366" target="_blank" rel="noreferrer">Архивный прецедент Cofix с 16 лет</a></li>
+          <li><a href="https://hh.ru/vacancy/129444153" target="_blank" rel="noreferrer">Архивный прецедент Drinkit с 16 лет</a></li>
+          <li><a href="https://hh.ru/vacancy/128614174" target="_blank" rel="noreferrer">Архивный прецедент бариста StarHit с 16 лет</a></li>
+          <li><a href="https://dreamjob.ru/employers/53304/vakansii/129138212" target="_blank" rel="noreferrer">Архивный прецедент Oniverse/Calzedonia с 16 лет</a></li>
+          <li><a href="https://careerist.ru/vakansii/administrator-prodavets-v-magazin-odezhdy-kodirov-khasan-khaydarovich-86162288.html" target="_blank" rel="noreferrer">Нестандартный источник: Pukhoviki.ru с 16 лет, но без временного формата</a></li>
+        </ul>
+      </details>
+    </section>
+  </main>
+
+  <div class="snackbar" id="snackbar" role="status" aria-live="polite">
+    <span id="snackbar-text"></span>
+    <button id="snackbar-undo" type="button">Отменить</button>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Быстрый фильтр вакансий">
+    <button type="button" data-view="active" aria-pressed="true">Все<span id="nav-active-count">0</span></button>
+    <button type="button" data-view="favorites" aria-pressed="false">Избранное<span id="nav-favorite-count">0</span></button>
+    <button type="button" data-view="discarded" aria-pressed="false">Отброшено<span id="nav-discarded-count">0</span></button>
+  </nav>
+
+  <footer class="wrap">
+    <p>Снимок публичных объявлений на 18.07.2026. Вакансия может закрыться раньше указанной даты. Перед выходом на работу проверяйте трудовой договор, график, фактическую ставку и отсутствие ночных смен.</p>
+  </footer>
+
+  <script>
+    const jobs = [
+      {id:134460113,direction:'barista',title:'Бариста',company:'Варочная',address:'Очаковское шоссе, 5к4',distance:3.6,salary:'от 74 000 ₽ на руки',salaryMax:74000,hours:'7, 8 часов или гибко',published:'16 июля',valid:'до 22 июля',status:'possible',relevance:98,phone:null,phoneHint:'Контакт скрыт работодателем на HH',note:'Лучший баланс: рядом и прямо есть 7-часовая смена. Подтвердить 16+, дневное время и договор до 31 августа.',review:'Публичных отзывов о работодателе почти нет — особенно тщательно проверить оформление и выплаты.',reviewUrl:null},
+      {id:135024153,direction:'barista',title:'Бариста',company:'Stars Coffee',address:'площадь Киевского Вокзала, 2',distance:5.0,salary:'45 000–60 000 ₽ до вычета',salaryMax:60000,hours:'6, 8, 12 часов или гибко',published:'18 июля',valid:'до 8 августа',status:'possible',relevance:94,phone:'+74951459744',phoneHint:'Публичный номер сети, для этой точки добавочный 1085',note:'Есть законная 6-часовая смена, но объявление допускает ночные. Просить только дневной график и письменное подтверждение 16+.',review:'Хвалят обучение и гибкий график; ругают высокий поток, широкий круг обязанностей и нехватку перерывов.',reviewUrl:'https://dreamjob.ru/employers/2475090/city-moskva'},
+      {id:135207360,direction:'barista',title:'Бариста',company:'Хлеб с маслом',address:'проспект Вернадского, 84с1',distance:5.6,salary:'45 000–96 000 ₽ на руки',salaryMax:96000,hours:'12 часов, гибко или по договорённости',published:'17 июля',valid:'до 13 августа',status:'precedent',relevance:92,phone:null,phoneHint:'Публичный номер текущей точки не найден',note:'У сети была вакансия бариста с 16 лет. Текущая карточка возраст не подтверждает; нужен график не больше 7 часов.',review:'4,4/5, 78% рекомендуют: сильный коллектив и гибкость; встречаются жалобы на очень длинные смены.',reviewUrl:'https://dreamjob.ru/employers/187786/vacancy-barista'},
+      {id:135330566,direction:'barista',title:'Бариста',company:'Технология Вкуса',address:'Шаболовка, 30/12',distance:6.2,salary:'5 000–6 000 ₽ за смену',salaryMax:128571,hours:'7 или 8 часов',published:'18 июля',valid:'до 17 августа',status:'possible',relevance:90,phone:null,phoneHint:'Контакт скрыт работодателем на HH',note:'Есть 7-часовой вариант и высокая ставка, но объявление допускает ночные смены. Подтвердить 16+ и только дневную работу.',review:'Надёжного массива отзывов именно об этом работодателе не найдено.',reviewUrl:null},
+      {id:135249235,direction:'barista',title:'Бариста-кассир',company:'РАМБАТУТ',address:'Загородное шоссе, 6к1',distance:6.3,salary:'80 000–95 000 ₽ на руки',salaryMax:95000,hours:'от 6 до 12 часов',published:'15 июля',valid:'до 14 августа',status:'possible',relevance:88,phone:null,phoneHint:'Контакт скрыт работодателем на HH',note:'Можно выбрать 6 часов. Нужны письменное согласие на 16+ и фиксация короткой смены в договоре.',review:'Независимых отзывов именно о линейной работе в этой точке недостаточно.',reviewUrl:null},
+      {id:135206044,direction:'barista',title:'Бариста в кофейню',company:'Росинтер Ресторантс',address:'метро Белорусская',distance:8.5,salary:'от 72 000 ₽ до вычета',salaryMax:72000,hours:'4, 6, 8, 10 или 12 часов',published:'14 июля',valid:'до 13 августа',status:'possible',relevance:80,phone:null,phoneHint:'Контакт скрыт работодателем на HH',note:'Есть 4- и 6-часовые смены, но также отмечены ночные. Для несовершеннолетней — только дневной график.',review:'59,7% рекомендуют: хвалят команду и обучение; часто жалуются на оплату, нагрузку и перерывы.',reviewUrl:'https://dreamjob.ru/employers/44205'},
+      {id:134977780,direction:'barista',title:'Бариста в кофейню Cofix',company:'Cofix',address:'Зубовский бульвар, 17с1',distance:5.7,salary:'90 000–120 000 ₽ на руки',salaryMax:120000,hours:'8, 12 часов или другое',published:'8 июля',valid:'до 7 августа',status:'precedent',relevance:78,phone:'+78003508418',phoneHint:'Публичный единый номер Cofix',note:'У сети был приём бариста с 16 лет, но текущая точка возраст не указала и короткую смену не обещает. Сначала звонок.',review:'В свежих отзывах хвалят коллектив и график; упоминают быстрый вход в нагрузку и желание более высокой оплаты.',reviewUrl:'https://dreamjob.ru/employers/109188/city-moskva/vacancy-barista'},
+      {id:134373002,direction:'fashion',title:'Продавец-консультант бренда сумок PISCA',company:'Pisca.Who',address:'ТРЦ «Авиапарк», Ходынский бульвар, 4',distance:8.8,salary:'90 000–110 000 ₽ на руки',salaryMax:110000,hours:'11, 12 часов или гибко',published:'16 июля',valid:'до 19 июля',status:'possible',relevance:76,phone:null,phoneHint:'Публичный номер работодателя не найден',note:'Формат гибкий, но вакансия срочно истекает. Спросить о 6–7 часах и возрасте до отклика.',review:'Надёжного массива отзывов о работе продавцов в бренде не найдено.',reviewUrl:null},
+      {id:135280961,direction:'fashion',title:'Продавец-консультант в магазин одежды',company:'ИП Лямин',address:'Ярцевская улица, 25А',distance:6.8,salary:'от 100 000 ₽ на руки',salaryMax:100000,hours:'по договорённости',published:'16 июля',valid:'до 15 августа',status:'possible',relevance:74,phone:null,phoneHint:'Контакт скрыт работодателем на HH',note:'Часы не раскрыты. Имеет смысл откликнуться только с первым вопросом про 16+ и смену до 7 часов.',review:'Публичных отзывов о работодателе не найдено.',reviewUrl:null},
+      {id:135243805,direction:'barista',title:'Бариста',company:'THE FLEX',address:'Мосфильмовская улица, 8',distance:1.6,salary:'от 80 000 ₽ на руки',salaryMax:80000,hours:'12 часов, 2/2',published:'15 июля',valid:'до 14 августа',status:'change',relevance:72,phone:'+78005051618',phoneHint:'Публичный номер клуба THE FLEX на Мосфильмовской',note:'Самая близкая, но заявленная 12-часовая смена запрещена для 16-летней. Звонить только с просьбой дать 6–7 часов.',review:'Публичных отзывов именно о работе бариста в фитнес-клубе почти нет.',reviewUrl:null},
+      {id:134541443,direction:'fashion',title:'Продавец-консультант премиальной одежды',company:'SARTO REALE',address:'ТРЦ «Океания», Кутузовский проспект, 57',distance:2.8,salary:'от 100 000 ₽ на руки',salaryMax:100000,hours:'12 часов, 2/2',published:'24 июня',valid:'до 24 июля',status:'change',relevance:70,phone:'+79689855373',phoneHint:'Публичный номер салона SARTO REALE в «Океании»',note:'Очень близко и брендовая одежда, но фиксированная 12-часовая смена незаконна для 16-летней. Сначала звонок о короткой летней смене.',review:'Отзывов немного; положительно пишут о продукте и консультативных продажах. Данных недостаточно для уверенного вывода.',reviewUrl:'https://dreamjob.ru/employers/109291'},
+      {id:134951509,direction:'fashion',title:'Продавец-консультант женской одежды',company:'BRUSNIKA',address:'ТРЦ «Океания DENIM», Кутузовский проспект, 57',distance:2.8,salary:'от 80 000 ₽ на руки',salaryMax:80000,hours:'12 часов, 2/2',published:'7 июля',valid:'до 6 августа',status:'change',relevance:69,phone:'+79161004855',phoneHint:'Публичный номер магазина BRUSNIKA в «Океании»',note:'Близко и бренд подходит, но текущая 12-часовая смена не годится. Спросить о временной позиции 6–7 часов.',review:'4,1/5, 80% рекомендуют: хвалят коллектив и совмещение с учёбой; жалуются на перерывы и разницу между точками.',reviewUrl:'https://dreamjob.ru/employers/300722/city-moskva'},
+      {id:135245765,direction:'fashion',title:'Продавец-консультант',company:'Glenfield',address:'ТЦ «Варна», Ленинский проспект, 34/1',distance:4.2,salary:'70 000–90 000 ₽ на руки',salaryMax:90000,hours:'11 часов, 2/2',published:'15 июля',valid:'до 14 августа',status:'change',relevance:64,phone:null,phoneHint:'Публичный номер актуальной точки не найден',note:'Близко, но 11 часов нельзя. Подходит только если магазин создаст отдельную короткую временную смену.',review:'Отзывы малочисленны и старые; встречается плюс о своевременной зарплате, выводы ограничены.',reviewUrl:'https://dreamjob.ru/employers/443269/city-moskva'},
+      {id:134442683,direction:'barista',title:'Бариста',company:'ИП Варданян',address:'Пресненская набережная, 10, блок C',distance:4.2,salary:'75 000–110 000 ₽ на руки',salaryMax:110000,hours:'8, 10 или 12 часов',published:'16 июля',valid:'до 22 июля',status:'change',relevance:62,phone:null,phoneHint:'Контакт скрыт работодателем на HH',note:'Все заявленные смены длиннее 7 часов. Отклик только при готовности работодателя изменить график.',review:'Публичных независимых отзывов о работодателе не найдено.',reviewUrl:null},
+      {id:134905144,direction:'barista',title:'Бариста',company:'ИП Русаков',address:'улица Вавилова, 79к1',distance:4.3,salary:'350 ₽/час на руки',salaryMax:52500,hours:'10 или 12 часов',published:'6 июля',valid:'до 5 августа',status:'change',relevance:60,phone:null,phoneHint:'Контакт скрыт работодателем на HH',note:'Почасовая ставка понятна, но заявленная смена слишком длинная. Просить 6–7 часов и официальный договор.',review:'Публичных независимых отзывов о работодателе не найдено.',reviewUrl:null},
+      {id:134829813,direction:'fashion',title:'Продавец-консультант / стилист',company:'BRUSNIKA',address:'ТЦ «Афимолл», Пресненская набережная, 2',distance:4.5,salary:'от 80 000 ₽ на руки',salaryMax:80000,hours:'12 часов, 2/2',published:'3 июля',valid:'до 2 августа',status:'change',relevance:58,phone:'+78003508991',phoneHint:'Публичный единый номер BRUSNIKA',note:'Бренд релевантен, но 12 часов нельзя. Позвонить и спросить о летней 6–7-часовой позиции в этой или ближайшей точке.',review:'4,1/5, 80% рекомендуют: сильный коллектив и гибкость в части точек; встречаются проблемы с перерывами и управлением.',reviewUrl:'https://dreamjob.ru/employers/300722/city-moskva'},
+      {id:135095492,direction:'barista',title:'Бариста',company:'Кофейня «Здрасте»',address:'Большая Филёвская улица, 4',distance:4.6,salary:'от 60 000 ₽ на руки',salaryMax:60000,hours:'12 часов или другое, частичная занятость',published:'11 июля',valid:'до 10 августа',status:'change',relevance:56,phone:'+79254440077',phoneHint:'Публичный номер кофейни на Большой Филёвской',note:'Частичная занятость — плюс, но короткая смена не обещана. Звонить и просить 6–7 часов.',review:'Около 3,5/5: хвалят коллектив и гибкость; есть жалобы на оплату, нагрузку, руководство и 14-часовые смены.',reviewUrl:'https://dreamjob.ru/employers/2373616/city-moskva/vacancy-barista'},
+      {id:101749728,direction:'barista',title:'Бариста',company:'ВкусВилл',address:'Фрунзенская набережная, 34',distance:4.9,salary:'80 000–110 000 ₽ на руки',salaryMax:110000,hours:'12 часов',published:'17 июля',valid:'до 16 августа',status:'change',relevance:54,phone:'+79295227340',phoneHint:'Публичный номер магазина на Фрунзенской набережной',note:'Отзывы хорошие, но текущая смена 12 часов. Спросить, есть ли в сети временная точка с 6–7 часами.',review:'4,1/5, 82% рекомендуют: обучение, льготы и гибкость; риск нехватки сменщика, слабых перерывов и нагрузки на ногах.',reviewUrl:'https://dreamjob.ru/employers/56859/city-moskva/vacancy-barista'},
+      {id:135264941,direction:'fashion',title:'Продавец-консультант женской одежды',company:'BRUSNIKA',address:'ТЦ «Хорошо!», Хорошёвское шоссе, 27',distance:7.3,salary:'от 80 000 ₽ на руки',salaryMax:80000,hours:'12 часов, 2/2',published:'16 июля',valid:'до 15 августа',status:'change',relevance:50,phone:'+78003508991',phoneHint:'Публичный единый номер BRUSNIKA',note:'12 часов не подходят. Звонок полезен как запрос на любую точку сети с короткой временной сменой.',review:'4,1/5, 80% рекомендуют; опыт зависит от магазина и руководителя.',reviewUrl:'https://dreamjob.ru/employers/300722/city-moskva'},
+      {id:135319665,direction:'fashion',title:'Продавец-консультант в бутик',company:'BRUSNIKA',address:'Малый Патриарший переулок, 3',distance:7.6,salary:'75 000–90 000 ₽ на руки',salaryMax:90000,hours:'12 часов, 2/2',published:'17 июля',valid:'до 16 августа',status:'change',relevance:48,phone:'+79257265385',phoneHint:'Публичный номер бутика на Патриарших',note:'Бренд подходит, но смена слишком длинная. Спросить о короткой летней позиции.',review:'4,1/5, 80% рекомендуют; хвалят коллектив, но отзывы расходятся по графику и перерывам.',reviewUrl:'https://dreamjob.ru/employers/300722/city-moskva'},
+      {id:134501398,direction:'fashion',title:'Консультант-стилист',company:'Боссанова мен',address:'Автозаводская улица, 18',distance:8.1,salary:'от 130 000 ₽ на руки',salaryMax:130000,hours:'8 или 10 часов',published:'23 июня',valid:'до 23 июля',status:'change',relevance:44,phone:null,phoneHint:'Контакт скрыт работодателем на HH',note:'Высокая зарплата, но даже минимальная смена длиннее допустимой. Нужна отдельная 7-часовая договорённость.',review:'Надёжного массива отзывов о работе продавцов не найдено.',reviewUrl:null},
+      {id:134892842,direction:'fashion',title:'Продавец-консультант женской одежды',company:'Encelade',address:'Трёхпрудный переулок, 4с1',distance:8.1,salary:'95 000–145 000 ₽ на руки',salaryMax:145000,hours:'12 часов, 2/2',published:'18 июля',valid:'до 5 августа',status:'change',relevance:42,phone:null,phoneHint:'Публичный номер работодателя не найден',note:'Самая высокая вилка, но график несовместим с возрастом. Не рассматривать без письменного изменения смены.',review:'Публичных независимых отзывов о работодателе почти нет.',reviewUrl:null}
+    ];
+
+    const statusMeta = {
+      possible: {label:'Можно проверять', className:'badge-possible'},
+      precedent: {label:'Есть прецедент 16+', className:'badge-precedent'},
+      change: {label:'Только при изменении смены', className:'badge-change'}
+    };
+    const storageKey = 'summer-jobs-moscow-16-v1';
+    let marks = loadMarks();
+    let lastAction = null;
+    let snackbarTimer = null;
+
+    const listEl = document.getElementById('job-list');
+    const countEl = document.getElementById('result-count');
+    const directionEl = document.getElementById('direction');
+    const viewEl = document.getElementById('view');
+    const sortEl = document.getElementById('sort');
+
+    function loadMarks() {
+      try { return JSON.parse(localStorage.getItem(storageKey)) || {}; }
+      catch { return {}; }
+    }
+
+    function saveMarks() {
+      localStorage.setItem(storageKey, JSON.stringify(marks));
+    }
+
+    function markFor(id) {
+      return marks[id] || {favorite:false, discarded:false};
+    }
+
+    function cleanPhone(value) {
+      return value ? value.replace(/[^+\d]/g, '') : null;
+    }
+
+    function render() {
+      const direction = directionEl.value;
+      const view = viewEl.value;
+      const sort = sortEl.value;
+      const filtered = jobs.filter(job => {
+        const mark = markFor(job.id);
+        if (direction !== 'all' && job.direction !== direction) return false;
+        if (view === 'active' && mark.discarded) return false;
+        if (view === 'favorites' && (!mark.favorite || mark.discarded)) return false;
+        if (view === 'discarded' && !mark.discarded) return false;
+        return true;
+      });
+
+      filtered.sort((a,b) => {
+        const favDiff = Number(markFor(b.id).favorite) - Number(markFor(a.id).favorite);
+        if (favDiff && view !== 'discarded') return favDiff;
+        if (sort === 'distance') return a.distance - b.distance || b.salaryMax - a.salaryMax;
+        if (sort === 'salary') return b.salaryMax - a.salaryMax || a.distance - b.distance;
+        return b.relevance - a.relevance || a.distance - b.distance;
+      });
+
+      countEl.textContent = `${filtered.length} ${plural(filtered.length, 'вакансия', 'вакансии', 'вакансий')}`;
+      if (!filtered.length) {
+        listEl.innerHTML = '<div class="empty"><h3>Здесь пока пусто</h3><p>Измените фильтр или верните отбракованные карточки.</p></div>';
+      } else {
+        listEl.innerHTML = filtered.map(jobCard).join('');
+      }
+      updateNav();
+    }
+
+    function jobCard(job) {
+      const mark = markFor(job.id);
+      const status = statusMeta[job.status];
+      const phone = cleanPhone(job.phone);
+      const phoneButton = phone
+        ? `<a class="button button-call" href="tel:${phone}">Позвонить</a>`
+        : '';
+      const review = job.reviewUrl
+        ? `${job.review} <a href="${job.reviewUrl}" target="_blank" rel="noreferrer">Отзывы</a>`
+        : job.review;
+      return `<article class="job-card${mark.favorite ? ' is-favorite' : ''}${mark.discarded ? ' is-discarded' : ''}" data-id="${job.id}">
+        <div class="card-top">
+          <div>
+            <h3>${job.title}</h3>
+            <p class="company">${job.company}</p>
+          </div>
+          <button class="star-button" type="button" data-action="favorite" data-id="${job.id}" aria-pressed="${mark.favorite}" aria-label="${mark.favorite ? 'Убрать из избранного' : 'Добавить в избранное'}">${mark.favorite ? '★' : '☆'}</button>
+        </div>
+        <div class="badges">
+          <span class="badge ${status.className}">${status.label}</span>
+          <span class="badge badge-temp">Временная работа: да</span>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>Расстояние</b><span>${String(job.distance).replace('.', ',')} км</span></div>
+          <div class="fact"><b>Зарплата</b><span>${job.salary}</span></div>
+          <div class="fact"><b>Адрес</b><span>${job.address}</span></div>
+          <div class="fact"><b>Смена</b><span>${job.hours}</span></div>
+        </div>
+        <p class="eligibility"><strong>Проверка 16+:</strong> ${job.note}</p>
+        <p class="review"><strong>Отзывы:</strong> ${review}</p>
+        <div class="card-actions">
+          ${phoneButton}
+          <a class="button button-primary" href="https://hh.ru/vacancy/${job.id}" target="_blank" rel="noreferrer">Откликнуться</a>
+          <button class="button button-quiet" type="button" data-action="favorite" data-id="${job.id}" aria-pressed="${mark.favorite}">${mark.favorite ? 'В избранном' : 'В избранное'}</button>
+          <button class="button discard-button" type="button" data-action="discard" data-id="${job.id}" aria-pressed="${mark.discarded}">${mark.discarded ? 'Вернуть' : 'Отбросить'}</button>
+          <p class="phone-hint">${job.phoneHint} · опубликовано ${job.published}, действует ${job.valid}</p>
+        </div>
+      </article>`;
+    }
+
+    function plural(n, one, few, many) {
+      const mod10 = n % 10, mod100 = n % 100;
+      if (mod10 === 1 && mod100 !== 11) return one;
+      if (mod10 >= 2 && mod10 <= 4 && !(mod100 >= 12 && mod100 <= 14)) return few;
+      return many;
+    }
+
+    function toggleMark(id, type) {
+      const previous = {...markFor(id)};
+      const next = {...previous};
+      if (type === 'favorite') {
+        next.favorite = !next.favorite;
+        if (next.favorite) next.discarded = false;
+      } else {
+        next.discarded = !next.discarded;
+        if (next.discarded) next.favorite = false;
+      }
+      marks[id] = next;
+      saveMarks();
+      lastAction = {id, previous};
+      render();
+      showSnackbar(type === 'favorite' ? (next.favorite ? 'Добавлено в избранное' : 'Убрано из избранного') : (next.discarded ? 'Вакансия отброшена' : 'Вакансия возвращена'));
+    }
+
+    function showSnackbar(message) {
+      const bar = document.getElementById('snackbar');
+      document.getElementById('snackbar-text').textContent = message;
+      bar.classList.add('show');
+      clearTimeout(snackbarTimer);
+      snackbarTimer = setTimeout(() => bar.classList.remove('show'), 4200);
+    }
+
+    function updateNav() {
+      const active = jobs.filter(j => !markFor(j.id).discarded).length;
+      const favorites = jobs.filter(j => markFor(j.id).favorite && !markFor(j.id).discarded).length;
+      const discarded = jobs.filter(j => markFor(j.id).discarded).length;
+      document.getElementById('nav-active-count').textContent = active;
+      document.getElementById('nav-favorite-count').textContent = favorites;
+      document.getElementById('nav-discarded-count').textContent = discarded;
+      document.querySelectorAll('.mobile-nav button').forEach(button => {
+        button.setAttribute('aria-pressed', String(button.dataset.view === viewEl.value));
+      });
+    }
+
+    document.addEventListener('click', event => {
+      const action = event.target.closest('[data-action]');
+      if (action) toggleMark(Number(action.dataset.id), action.dataset.action);
+    });
+    [directionEl, viewEl, sortEl].forEach(control => control.addEventListener('change', render));
+    document.querySelectorAll('.mobile-nav button').forEach(button => button.addEventListener('click', () => {
+      viewEl.value = button.dataset.view;
+      render();
+      document.getElementById('catalog').scrollIntoView({behavior:'smooth'});
+    }));
+    document.getElementById('snackbar-undo').addEventListener('click', () => {
+      if (!lastAction) return;
+      marks[lastAction.id] = lastAction.previous;
+      saveMarks();
+      lastAction = null;
+      document.getElementById('snackbar').classList.remove('show');
+      render();
+    });
+    document.getElementById('reset-marks').addEventListener('click', () => {
+      if (!Object.keys(marks).length || window.confirm('Сбросить всё избранное и все отбраковки на этом телефоне?')) {
+        marks = {};
+        saveMarks();
+        render();
+        showSnackbar('Все отметки сброшены');
+      }
+    });
+    document.getElementById('copy-script').addEventListener('click', async event => {
+      const text = document.getElementById('call-script').textContent;
+      try {
+        await navigator.clipboard.writeText(text);
+        event.currentTarget.textContent = 'Скопировано';
+        showSnackbar('Текст звонка скопирован');
+        setTimeout(() => event.currentTarget.textContent = 'Скопировать текст', 1800);
+      } catch {
+        window.prompt('Скопируйте текст:', text);
+      }
+    });
+
+    render();
+  </script>
+</body>
+</html>
