@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Private Closet — исследовательский пилот luxury resale в Москве</title>
+    <meta
+      name="description"
+      content="Исследовательский пилот для владельцев почти новых люксовых сумок и аксессуаров: одна заявка вместо фото, объявлений, торга и координации сделок."
+    >
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <meta name="theme-color" content="#f7f3ec">
+    <link rel="canonical" href="https://adavydov.github.io/luxury-resale-pilot/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Private Closet">
+    <meta property="og:title" content="Продать почти новые люксовые вещи — без второй работы">
+    <meta
+      property="og:description"
+      content="Московский исследовательский пилот комиссионного сервиса. Одна короткая заявка, понятный процесс и честные границы эксперимента."
+    >
+    <meta property="og:url" content="https://adavydov.github.io/luxury-resale-pilot/">
+    <meta property="og:image" content="https://adavydov.github.io/luxury-resale-pilot/assets/hero-closet.webp">
+    <meta property="og:image:alt" content="Лаконичная композиция с туфлями, сумкой и предметами гардероба">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Private Closet — исследовательский пилот">
+    <meta
+      name="twitter:description"
+      content="Продажа почти новых люксовых вещей без самостоятельных объявлений, торга и координации сделок."
+    >
+    <meta name="twitter:image" content="https://adavydov.github.io/luxury-resale-pilot/assets/hero-closet.webp">
+
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body class="client-page">
+    <a class="skip-link" href="#main-content">Перейти к содержанию</a>
+
+    <header class="client-header" aria-label="Шапка сайта">
+      <div class="section-shell header-inner">
+        <a class="brand" href="#top" aria-label="Private Closet — к началу страницы">
+          <span class="brand-name">Private Closet</span>
+          <span class="brand-note">рабочее название · пилот</span>
+        </a>
+        <div class="header-actions">
+          <a class="text-link" href="#how">Как это задумано</a>
+          <a class="button button-primary" href="#apply">Оставить заявку</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="client-main" id="main-content">
+      <section class="client-hero" id="top" aria-labelledby="hero-title">
+        <div class="section-shell hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">Москва · исследовательский пилот</p>
+            <h1 class="display-title" id="hero-title">
+              Продайте почти новые люксовые вещи, не превращая это во вторую работу
+            </h1>
+            <p class="lead">
+              Мы проверяем сервис для владельцев 3–10 вещей в отличном состоянии, прежде всего
+              сумок и малой кожгалантереи, которые откладывают перепродажу из-за всей мелкой работы.
+            </p>
+            <ul class="hero-points" aria-label="Главное о пилоте">
+              <li>Одна короткая заявка вместо самостоятельного старта</li>
+              <li>Сначала — сумки и аксессуары; обувь только как сравнительный тест</li>
+              <li>Два честных варианта цены сервиса проверяются, а не выдаются за готовый тариф</li>
+              <li>Никаких обещаний «продать быстро и дороже всех»</li>
+            </ul>
+
+            <figure class="hero-visual">
+              <img
+                src="assets/hero-closet.webp"
+                alt="Туфли, сумка и аккуратно сложенные предметы гардероба в светлом интерьере"
+                width="1536"
+                height="1024"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              >
+              <figcaption>Цель пилота — освободить шкаф и внимание, вернув часть стоимости вещей.</figcaption>
+            </figure>
+          </div>
+
+          <aside class="hero-form-card" id="apply" aria-labelledby="form-title">
+            <p class="eyebrow">Заявка занимает около 2 минут</p>
+            <h2 id="form-title">Понять, подходит ли ваш гардероб для пилота</h2>
+            <p>
+              Сейчас мы собираем интерес и проверяем формат. Заявка не означает приём вещи и
+              ни к чему вас не обязывает.
+            </p>
+
+            <form class="pilot-form" id="pilot-form" novalidate>
+              <div class="form-progress" aria-label="Шаги заявки">
+                <span class="form-progress-item is-active" aria-current="step">1. О вещах</span>
+                <span class="form-progress-item">2. О задаче</span>
+              </div>
+
+              <div class="form-step" data-form-step="1">
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="owner-name">Как к вам обращаться</label>
+                    <input
+                      id="owner-name"
+                      name="owner-name"
+                      type="text"
+                      autocomplete="name"
+                      placeholder="Например, Анна"
+                      required
+                      aria-describedby="owner-name-error"
+                    >
+                    <span class="field-error" id="owner-name-error" aria-live="polite"></span>
+                  </div>
+
+                  <div class="field">
+                    <label for="owner-contact">Email, телефон или Telegram</label>
+                    <input
+                      id="owner-contact"
+                      name="owner-contact"
+                      type="text"
+                      autocomplete="email"
+                      placeholder="Куда удобно ответить"
+                      required
+                      aria-describedby="owner-contact-hint owner-contact-error"
+                    >
+                    <small id="owner-contact-hint">Используем только для ответа по этой заявке.</small>
+                    <span class="field-error" id="owner-contact-error" aria-live="polite"></span>
+                  </div>
+
+                  <div class="field">
+                    <label for="owner-batch">Сколько вещей вы хотите разобрать</label>
+                    <select
+                      id="owner-batch"
+                      name="owner-batch"
+                      required
+                      aria-describedby="owner-batch-error"
+                    >
+                      <option value="">Выберите количество</option>
+                      <option value="1–2 вещи">1–2 вещи</option>
+                      <option value="3–4 вещи">3–4 вещи</option>
+                      <option value="5–10 вещей">5–10 вещей</option>
+                      <option value="Больше 10 вещей">Больше 10 вещей</option>
+                    </select>
+                    <span class="field-error" id="owner-batch-error" aria-live="polite"></span>
+                  </div>
+
+                  <div class="field">
+                    <label for="owner-categories">Какая категория преобладает</label>
+                    <select
+                      id="owner-categories"
+                      name="owner-categories"
+                      required
+                      aria-describedby="owner-categories-error"
+                    >
+                      <option value="">Выберите категорию</option>
+                      <option value="Сумки">Сумки</option>
+                      <option value="Аксессуары">Аксессуары</option>
+                      <option value="Обувь — сравнительная категория">Обувь — сравнительная категория</option>
+                      <option value="Одежда — не ядро пилота">Одежда — не ядро пилота</option>
+                      <option value="Несколько категорий">Несколько категорий</option>
+                    </select>
+                    <span class="field-error" id="owner-categories-error" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button class="button button-primary" type="button" data-form-next>
+                    Продолжить
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-step" data-form-step="2" hidden>
+                <div class="form-grid">
+                  <div class="field field-full">
+                    <label for="owner-blocker">Что больше всего мешает продать вещи сейчас?</label>
+                    <textarea
+                      id="owner-blocker"
+                      name="owner-blocker"
+                      rows="5"
+                      placeholder="Например: некогда фотографировать, не хочу торговаться, неудобно ехать в комиссионный магазин"
+                      required
+                      aria-describedby="owner-blocker-error"
+                    ></textarea>
+                    <span class="field-error" id="owner-blocker-error" aria-live="polite"></span>
+                  </div>
+
+                  <div class="field field-full field-consent">
+                    <label class="checkbox-label" for="consent">
+                      <input
+                        id="consent"
+                        name="consent"
+                        type="checkbox"
+                        value="Согласие подтверждено"
+                        required
+                        aria-describedby="consent-hint consent-error"
+                      >
+                      <span>
+                        Я понимаю, что это заявка на исследовательский пилот, а не заказ услуги
+                        и не согласие на передачу вещей.
+                      </span>
+                    </label>
+                    <small id="consent-hint">
+                      Сайт не сохраняет ответы: после нажатия откроется подготовленное письмо в вашей почте.
+                      Перед отправкой можно прочитать <a href="/personalnye-dannye/" target="_blank" rel="noopener noreferrer">техническое уведомление о данных</a>.
+                    </small>
+                    <span class="field-error" id="consent-error" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button class="button button-secondary" type="button" data-form-back>Назад</button>
+                  <button class="button button-primary" type="submit">Подготовить заявку</button>
+                </div>
+              </div>
+
+              <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+              <button class="button button-secondary copy-request" type="button" data-copy-request hidden>
+                Скопировать текст заявки
+              </button>
+            </form>
+          </aside>
+        </div>
+
+        <div class="trust-strip" aria-label="Условия первого контакта">
+          <div class="section-shell trust-strip-inner">
+            <span>Без фото на публичной форме</span>
+            <span>Без оплаты и передачи вещей</span>
+            <span>Ответ по каждой заявке вручную</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-warm" id="fit" aria-labelledby="fit-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">5 владельцев · 15–20 лотов первого закрытого дропа</p>
+            <h2 id="fit-title">Какие вещи мы хотим проверить в пилоте</h2>
+            <p>
+              Сначала нужен узкий и понятный ассортимент. Так можно честно проверить спрос,
+              время на одну вещь и экономику сервиса.
+            </p>
+          </div>
+
+          <div class="criteria-grid">
+            <article class="category-card">
+              <p class="card-number" aria-hidden="true">01</p>
+              <h3>Сумки и малая кожгалантерея</h3>
+              <p>Не меньше 70% пилота: near-new сумки, кошельки, кардхолдеры и похожие аксессуары с наблюдаемым спросом.</p>
+            </article>
+            <article class="category-card">
+              <p class="card-number" aria-hidden="true">02</p>
+              <h3>Отличное состояние и proof</h3>
+              <p>Новые или надетые 1–2 раза вещи; чек, коробка или ясная история покупки. Внешняя проверка согласуется до приёма.</p>
+            </article>
+            <article class="category-card">
+              <p class="card-number" aria-hidden="true">03</p>
+              <h3>Достаточная ожидаемая цена</h3>
+              <p>Ориентир продажи от 80–100 тыс. ₽ для full-service; более низкий чек пока не выдерживает ручную экономику.</p>
+            </article>
+            <article class="category-card">
+              <p class="card-number" aria-hidden="true">04</p>
+              <h3>Не срочная продажа</h3>
+              <p>Владелец хочет вернуть часть стоимости, но не требует гарантированной даты или максимальной цены.</p>
+            </article>
+          </div>
+
+          <p class="boundary-note">
+            Пока не рассматриваем подделки, вещи со сложными повреждениями, масс-маркет и заявки,
+            где деньги нужны к конкретной дате. Обувь — не больше 30% сравнительной выборки.
+            Предварительный отбор не подтверждает подлинность.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="how" aria-labelledby="how-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Как должен работать пилот</p>
+            <h2 id="how-title">От шкафа до сделки — четыре понятных шага</h2>
+            <p>
+              Сейчас мы проверяем именно такой сценарий. До запуска каждый шаг должен получить
+              официального оператора и зафиксированные правила.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <p class="card-number" aria-hidden="true">1</p>
+              <h3>Короткая заявка</h3>
+              <p>Вы сообщаете количество, категории и главное препятствие. На сайте не нужны фото и документы.</p>
+            </article>
+            <article class="step-card">
+              <p class="card-number" aria-hidden="true">2</p>
+              <h3>Предварительный разбор</h3>
+              <p>В личном контакте уточняем бренды, состояние, комплектность и выбираем подходящий тестовый пакет.</p>
+            </article>
+            <article class="step-card">
+              <p class="card-number" aria-hidden="true">3</p>
+              <h3>Условия до передачи</h3>
+              <p>Цена, минимальная выплата, комиссия, хранение и возврат сначала фиксируются договором и актом.</p>
+            </article>
+            <article class="step-card">
+              <p class="card-number" aria-hidden="true">4</p>
+              <h3>Один статус до результата</h3>
+              <p>Вместо разных чатов — понятный статус. После сделки — отчёт и выплата по утверждённым правилам.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="comparison" aria-labelledby="comparison-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Главная разница</p>
+            <h2 id="comparison-title">Не ещё одна витрина. Сервис, который снимает работу</h2>
+          </div>
+
+          <div class="comparison-grid">
+            <article class="comparison-card comparison-card-muted">
+              <p class="eyebrow">Самостоятельно</p>
+              <h3>Каждая вещь становится отдельным проектом</h3>
+              <ul>
+                <li>разобраться с ценой и площадками;</li>
+                <li>отснять, измерить и описать;</li>
+                <li>отвечать на вопросы и торг;</li>
+                <li>координировать примерки, курьеров и возвраты;</li>
+                <li>проверять оплату и помнить о статусе.</li>
+              </ul>
+            </article>
+            <article class="comparison-card comparison-card-accent">
+              <p class="eyebrow">Private Closet · гипотеза</p>
+              <h3>Одна передача задачи и одна точка контакта</h3>
+              <ul>
+                <li>предварительно понять, подходят ли вещи;</li>
+                <li>до старта согласовать границы и выплату;</li>
+                <li>выбрать, что оставить у себя, а что передать;</li>
+                <li>получать один понятный статус;</li>
+                <li>забрать результат без ежедневного контроля.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-warm" id="packages" aria-labelledby="packages-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Два способа проверить ценность</p>
+            <h2 id="packages-title">Два предложения — один тест готовности платить</h2>
+            <p>Это проверяемые условия эксперимента, а не окончательный прайс и не публичная оферта.</p>
+          </div>
+
+          <div class="package-grid">
+            <article class="package-card">
+              <div class="package-heading">
+                <p class="eyebrow">Предложение B · гипотеза</p>
+                <p class="package-price">15% + 5 000 ₽</p>
+              </div>
+              <h3>Подготовка оплачивается отдельно</h3>
+              <p class="package-minimum">Для лотов с ожидаемой продажей от 120 000 ₽; фиксированная часть — за принятый лот.</p>
+              <ul>
+                <li>фиксированные 5 000 ₽ — проверяемая цена подготовки и карточки;</li>
+                <li>15% — только после состоявшейся продажи;</li>
+                <li>вещь остаётся у владельца до согласованного момента.</li>
+              </ul>
+              <p class="package-boundary">Внешняя проверка и логистика считаются отдельно. Размер фиксированной части ещё не доказан. До legal gate деньги не принимаются.</p>
+            </article>
+
+            <article class="package-card package-card-featured">
+              <div class="package-heading">
+                <p class="eyebrow">Предложение A · основная гипотеза</p>
+                <p class="package-price">25% всё включено</p>
+              </div>
+              <h3>Если хочется передать процесс целиком</h3>
+              <p class="package-minimum">Для подходящих сумок и аксессуаров с ожидаемой продажей от 80–100 тыс. ₽.</p>
+              <ul>
+                <li>в гипотезе: забор в Москве, акт, контент и хранение;</li>
+                <li>коммуникация, упаковка, статус и отчёт по выплате;</li>
+                <li>без скрытых расходов владельца внутри стандартного процесса.</li>
+              </ul>
+              <p class="package-boundary">Лот с дорогой экспертизой, ремонтом или нестандартной логистикой не принимается по этому предложению.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="trust" aria-labelledby="trust-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Доверие начинается с честных границ</p>
+            <h2 id="trust-title">Что уже понятно — и что ещё нужно доказать</h2>
+          </div>
+
+          <div class="trust-grid">
+            <article class="trust-card trust-card-known">
+              <p class="eyebrow">Знаем</p>
+              <h3>В шкафах есть почти новые вещи, до продажи которых не доходят руки</h3>
+              <p>Главное препятствие часто не отсутствие площадки, а объём мелкой работы и неопределённость.</p>
+            </article>
+            <article class="trust-card trust-card-test">
+              <p class="eyebrow">Проверяем</p>
+              <h3>Выберут ли владельцы 25% all-in или 15% + фиксированную подготовку</h3>
+              <p>Заявки помогут проверить выбор предложения, состав партий, время на одну вещь и реальную экономику.</p>
+            </article>
+            <article class="trust-card trust-card-boundary">
+              <p class="eyebrow">Не обещаем</p>
+              <h3>Максимальную цену, срочную продажу или приём каждой вещи</h3>
+              <p>Предварительный ответ — это не оценка подлинности, не договор и не гарантия результата.</p>
+            </article>
+            <article class="trust-card trust-card-legal">
+              <p class="eyebrow">До первой передачи</p>
+              <h3>Официальный оператор, договор, акт, чек и правила возврата</h3>
+              <p>Самый простой путь — взрослый ИП/ООО. Возможен ИП Варвары с нотариальным согласием родителей, но схему нужно отдельно подтвердить.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-warm" id="faq" aria-labelledby="faq-title">
+        <div class="section-shell faq-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Вопросы до заявки</p>
+            <h2 id="faq-title">Коротко и без мелкого шрифта</h2>
+          </div>
+
+          <div class="faq-list">
+            <details>
+              <summary>Сервис уже принимает вещи?</summary>
+              <p>
+                Нет. Это исследовательский пилот и лист интереса. Передача вещей и оплата начнутся
+                только после оформления официального оператора, договора, кассовой схемы и правил процесса.
+              </p>
+            </details>
+            <details>
+              <summary>Заявка означает, что вещь точно примут?</summary>
+              <p>
+                Нет. Мы сначала уточним бренд, состояние, комплектность, ожидаемую цену и формат работы.
+                Только после этого можно обсуждать приглашение в закрытый пилот.
+              </p>
+            </details>
+            <details>
+              <summary>Как будет проверяться подлинность?</summary>
+              <p>
+                На первом контакте — только история покупки и документы владельца. Метод внешней
+                проверки должен согласовываться отдельно до приёма; сейчас такой сервис не заявлен как работающий.
+              </p>
+            </details>
+            <details>
+              <summary>Кто определяет цену?</summary>
+              <p>
+                В задуманном процессе сервис предлагает диапазон на основе рынка, а владелец заранее
+                утверждает стартовую цену и минимальную выплату. Изменения без согласования недопустимы.
+              </p>
+            </details>
+            <details>
+              <summary>Почему 25% или 15% + 5 000 ₽?</summary>
+              <p>
+                При 15% полный ручной сервис на обычном чеке, скорее всего, убыточен. Поэтому пилот
+                сравнивает 25% «всё включено» с 15% плюс фиксированная оплата подготовки. Оба варианта
+                должны получить реальный выбор владельца и показать неотрицательную экономику.
+              </p>
+            </details>
+            <details>
+              <summary>Куда попадут данные из формы?</summary>
+              <p>
+                Страница сама ничего не сохраняет и не отправляет. Она подготовит текст письма в вашей
+                почтовой программе; отправку подтверждаете вы. Если почта не откроется, текст можно скопировать.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark final-cta" aria-labelledby="final-cta-title">
+        <div class="section-shell final-cta-inner">
+          <div>
+            <p class="eyebrow">Без обязательств</p>
+            <h2 id="final-cta-title">Есть 3–10 вещей, до которых не доходят руки?</h2>
+            <p>Расскажите о партии. Первый ответ поможет понять, подходит ли она для проверки пилота.</p>
+          </div>
+          <a class="button button-primary" href="#apply">Оставить заявку</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="client-footer">
+      <div class="section-shell footer-grid">
+        <div>
+          <p class="brand-name">Private Closet</p>
+          <p>Рабочее название московского исследовательского пилота.</p>
+        </div>
+        <div>
+          <p>
+            Для связи: <a href="mailto:info@aivel.ru">info@aivel.ru</a>
+          </p>
+          <p>
+            <a class="text-link" href="guide/">Как устроена идея и почему сайт выглядит именно так</a>
+          </p>
+          <p>
+            <a class="text-link" href="/personalnye-dannye/">Как технически работает форма</a>
+          </p>
+        </div>
+        <p class="footer-legal">
+          Информация на странице не является публичной офертой. Заявка не означает принятие вещи,
+          подтверждение подлинности или обязательство совершить сделку. До утверждения полной
+          политики оператора страница используется только для тёплых исследовательских интервью.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
