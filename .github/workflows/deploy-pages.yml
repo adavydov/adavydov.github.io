@@ -24,10 +24,10 @@ jobs:
         run: |
           mkdir public-site
           rsync -a \
-            --exclude='.git/' \
-            --exclude='.github/' \
-            --exclude='index.html' \
-            --exclude='luxury-resale-pilot/' \
+            --exclude='/.git/' \
+            --exclude='/.github/' \
+            --exclude='/index.html' \
+            --exclude='/luxury-resale-pilot/' \
             ./ public-site/
       - name: Configure Pages
         uses: actions/configure-pages@v5
