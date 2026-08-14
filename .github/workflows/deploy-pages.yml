@@ -1,4 +1,4 @@
-name: Deploy filtered public site
+name: Deploy encrypted LTI access
 
 on:
   push:
@@ -20,12 +20,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Prepare public artifact
+      - name: Prepare encrypted LTI artifact
         run: |
-          test -f lti/index.html
-          mkdir public-site
+          test -f lti/private/index.html
+          test -f lti/private/site.enc
+          mkdir -p public-site/lti
           cp .nojekyll public-site/.nojekyll
-          cp -a lti public-site/lti
+          cp -a lti/private public-site/lti/private
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
